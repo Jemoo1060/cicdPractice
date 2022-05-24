@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: ENC()
-    username: ENC()
-    password: ENC()
+    url: ENC(FXfXprwsVmBNazzsdCSCcqTgRg4z7mxZPB0TUN44TaC5o24YGBQ4eE65Rj5O0tvslwiPH3wWyt05ewU8PVE8lMeQn/P1n4nWiyzXXSh3YHBlYxYITb+/ZmueDeU3AzzH0sZFz/Ahwgw=)
+    username: ENC(OusFGlmxp0bi1TkO8xwfYQTSEJQLFpPJ)
+    password: ENC(N6WEoEGrQwGTdxo2AkzKTfiR/v8PmPP2)
   servlet:
     multipart:
       max-file-size: 10MB
