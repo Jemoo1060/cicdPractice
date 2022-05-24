@@ -5,7 +5,7 @@
 # This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
 
-name: Java CI with Gradle
+name: Practice
 
 on:
   push:
@@ -74,14 +74,14 @@ jobs:
           --acl private \
           ./corinne-build.zip s3://cicdpractice-bucket/
 
-#      - name: deploy
-#        env:
-#          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#        run: |
-#          aws deploy create-deployment \
-#          --application-name corinne-deploy \
-#          --deployment-group-name corinne_project \
-#          --file-exists-behavior OVERWRITE \
-#          --s3-location bucket=corinne-bucket,bundleType=zip,key=corinne-build.zip \
-#          --region ap-northeast-2
+      - name: deploy
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          aws deploy create-deployment \
+          --application-name corinne-deploy \
+          --deployment-group-name corinne_project \
+          --file-exists-behavior OVERWRITE \
+          --s3-location bucket=corinne-bucket,bundleType=zip,key=corinne-build.zip \
+          --region ap-northeast-2
