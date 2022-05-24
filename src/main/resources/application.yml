@@ -18,14 +18,14 @@ spring:
 cloud:
   aws:
     s3:
-      bucket: ENC()
+      bucket: ENC(uIYnJ2EjtsVLX4+hGTEGBcvFhFWasiPWmV5B+kYlcOs=)
     region:
       static: ap-northeast-2
     stack:
       auto: false
     credentials:
-      access-key: ENC()
-      secret-key: ENC()
+      access-key: ENC(JQB+zZjxrSSqJWcis0QsITLnyOGrjQjAIqemtjE99DQ=)
+      secret-key: ENC(X6ZIpPo0Q7P4mACosl9a/YMaHxGHFaGUymyu2HDyhO+d43IyOwL81lkbosS7SNliQ9CB6OKsf0k=)
 
 jasypt:
   encryptor:
