@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: ENC()
+    username: ENC()
+    password: ENC()
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+cloud:
+  aws:
+    s3:
+      bucket: ENC()
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
+    credentials:
+      access-key: ENC()
+      secret-key: ENC()
+
+jasypt:
+  encryptor:
+    bean : jasyptStringEncryptor
