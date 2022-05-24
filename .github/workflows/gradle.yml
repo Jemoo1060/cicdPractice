@@ -80,8 +80,8 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           aws deploy create-deployment \
-          --application-name corinne-deploy \
-          --deployment-group-name corinne_project \
+          --application-name springboot-intro \
+          --deployment-group-name springboot-codedeploy \
           --file-exists-behavior OVERWRITE \
-          --s3-location bucket=corinne-bucket,bundleType=zip,key=corinne-build.zip \
+          --s3-location bucket=cicdpractice-bucket,bundleType=zip,key=corinne-build.zip \
           --region ap-northeast-2
