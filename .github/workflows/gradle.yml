@@ -72,5 +72,5 @@ jobs:
           --application-name springboot-intro \
           --deployment-group-name springboot-cd-group \
           --file-exists-behavior OVERWRITE \
-          --s3-location bucket=icdpractice-bucket,bundleType=zip,key=cicd-build.zip \
+          --s3-location bucket=cicdpractice-bucket,bundleType=zip,key=cicd-build.zip \
           --region ap-northeast-2
