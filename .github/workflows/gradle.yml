@@ -70,7 +70,7 @@ jobs:
         run: |
           aws deploy create-deployment \
           --application-name springboot-intro \
-          --deployment-group-name springboot-intro-deploy-group \
+          --deployment-group-name springboot-cd-group \
           --file-exists-behavior OVERWRITE \
           --s3-location bucket=icdpractice-bucket,bundleType=zip,key=cicd-build.zip \
           --region ap-northeast-2
