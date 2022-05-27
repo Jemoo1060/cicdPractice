@@ -37,6 +37,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll()
                 .antMatchers("/api/postsInfo**").permitAll()
                 .antMatchers("/detailPostView**").permitAll()
+                // cicd 포트변경시에 profile 메소드 열어줘야됨
                 .antMatchers("/**").permitAll()
                 .antMatchers("/images/**").permitAll()
                 // css 폴더를 login 없이 허용
