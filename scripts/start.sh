@@ -31,6 +31,6 @@ echo "> $JAR_NAME 를 profile=$IDLE_PROFILE 로 실행합니다."
 #    ${JAR_NAME} > ${REPOSITORY}/nohup.out 2>&1 &
 
 nohup java -jar \
-    -Dspring.config.location=classpath:/application.properties,classpath:/application-real1.properties \
-    -Dspring.profiles.active=real1 \
+    -Dspring.config.location=classpath:/application.properties,classpath:/application-real2.properties \
+    -Dspring.profiles.active=real2 \
     post-0.0.1-SNAPSHOT.jar > /home/ubuntu/sparta/deploy/nohup.out 2>&1 &
