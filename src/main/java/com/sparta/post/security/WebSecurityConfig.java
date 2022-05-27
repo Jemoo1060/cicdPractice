@@ -37,7 +37,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll()
                 .antMatchers("/api/postsInfo**").permitAll()
                 .antMatchers("/detailPostView**").permitAll()
-
+                .antMatchers("/**").permitAll()
                 .antMatchers("/images/**").permitAll()
                 // css 폴더를 login 없이 허용
                 .antMatchers("/css/**").permitAll()
