@@ -31,6 +31,7 @@ public class CommentController {
         return "redirect:/detailPostView?id=" + comment.getPostId();
     }
 
+    // 댓글 삭제
     @PostMapping("/comment/delete")
     public String deleteComment(@RequestParam Long id, @AuthenticationPrincipal UserDetailsImpl userDetails) {
 
