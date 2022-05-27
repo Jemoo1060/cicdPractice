@@ -11,7 +11,7 @@ function find_idle_profile()
     then
         CURRENT_PROFILE=real2
     else
-        CURRENT_PROFILE=$(curl -s https://gyuwony.shop/profile)
+        CURRENT_PROFILE=$(curl -s https://losthost/profile)
     fi
 
     # IDLE_PROFILE : nginx와 연결되지 않은 profile
