@@ -30,6 +30,7 @@ public class PostController {
         return "posting";
     }
 
+    
     // 상세 글 페이지
     @GetMapping("/detailPostView")
     public String detailPostView(@RequestParam Long id, Model model, @AuthenticationPrincipal UserDetailsImpl userDetails) {
