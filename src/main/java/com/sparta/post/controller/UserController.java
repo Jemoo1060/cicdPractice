@@ -36,7 +36,6 @@ public class UserController {
         if(userDetails != null){
             model.addAttribute("usernickname", userDetails.getUsernickname());
         }
-
         return "login";
     }
 
